@@ -1,0 +1,41 @@
+.houses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    background: #f6f6f6;
+    border-radius: 25px;
+    max-width: 90vw;
+    margin-top: 30px;
+
+}
+
+.card {
+    position: relative;
+    width: 25vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 2vw;
+    aspect-ratio: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover; // Ensures the image covers the space without distortion
+}
+
+.card-title {
+    position: absolute;
+    bottom: 10px; // Adjust to place it further up or down
+    left: 10px; // Adjust to place it further left or right
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Helps the title stand out against the image
+    font-family: 'Montserrat', sans-serif;
+}

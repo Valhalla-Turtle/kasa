@@ -1,0 +1,24 @@
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    a {
+        padding: 25px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        a{
+            font-size: 20px;
+        }
+    }
+}
