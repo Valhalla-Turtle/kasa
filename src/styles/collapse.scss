@@ -1,0 +1,9 @@
+.collapsible {
+    .content {
+        display: none; // Content is hidden by default
+    }
+
+    &.open .content {
+        display: block; // Content appears when 'open' class is added
+    }
+}
