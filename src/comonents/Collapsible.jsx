@@ -7,7 +7,7 @@ function Collapsible({ title, contente }) {
     return (
         <div className={`collapsible ${isOpen ? "open" : ""}`}>
             <button onClick={() => setIsOpen(!isOpen)} className="toggle-btn">
-                {title}
+                {title}<i className={`fas fa-chevron-up`}></i>
             </button>
             <div className="content">
                 <p>{contente}</p>
