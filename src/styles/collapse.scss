@@ -4,14 +4,24 @@
         max-height: 0;
         background: #F6F6F673;// Content is hidden by default
         transition: max-height 0.5s ease-out;
+        font-family: 'Montserrat', sans-serif;
+        padding-left:10px;
+        
     }
 
     &.open .content {
-        display: block; // Content appears when 'open' class is added
-        max-height: 200px;
+        max-height: 100px;
         transition: max-height 0.5s ease-out;
+        
     }
 }
+
+.fa-chevron-up {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+    &.open{
+    transform: rotate(-180deg);
+}}
 .toggle-btn{
     background: #FF6060;
     border:none;
