@@ -1,12 +1,12 @@
-.collapsible {
+.collapsible {width:75vw;
     .content {
         overflow: hidden;
         max-height: 0;
         background: #F6F6F673;// Content is hidden by default
         transition: max-height 0.5s ease-out;
         font-family: 'Montserrat', sans-serif;
-        padding-left:10px;
-        
+        width:96%;
+        padding:0px 2% 0px 2%;
     }
 
     &.open .content {
@@ -31,10 +31,7 @@
     font-weight:700;
     display: flex;
     width:75vw;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding:10px 20px 10px 15px;
     border-radius: 5px;
     margin-top: 40px;
     justify-content:space-between;
