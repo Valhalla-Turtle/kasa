@@ -12,7 +12,7 @@ function Card({cover,title}) {
     //   ))}
     // </div>
     <div className="card">
-      <img src={cover} alt={title} className="card-image" />
+      <a href="./logement"><img src={cover} alt={title} className="card-image" /></a>
       <h2 className="card-title">{title}</h2>
     </div>
   )

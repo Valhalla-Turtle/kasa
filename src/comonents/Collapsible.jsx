@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/collapse.scss";
 
-function Collapsible({ title, contente }) {
+function Collapsible({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -10,7 +10,7 @@ function Collapsible({ title, contente }) {
                 {title}<i className={`fas fa-chevron-up ${isOpen ? "open" : ""}`}></i>
             </button>
             <div className="content">
-                <p>{contente}</p>
+                <p>{content}</p>
             </div>
         </div>
     );

@@ -39,3 +39,9 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Helps the title stand out against the image
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 800px) {
+    .card{
+        width: 95vw;
+    }
+}

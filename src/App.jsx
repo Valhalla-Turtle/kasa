@@ -4,7 +4,7 @@ import About from './pages/About';
 import Error from './pages/Error';
 import { Link } from 'react-router-dom';
 import './App.scss';
-
+import Logement from './pages/logement';
 
 function Navigation() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
+        <Route path='/logement' element={<Logement />} />
       </Routes>
     </Router>
   );
