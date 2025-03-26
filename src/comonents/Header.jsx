@@ -3,10 +3,10 @@ import "../styles/header.scss"
 
 function Header() {
     return (
-        <div className="header">
+        <header>
             <img src="./LOGO.png" />
             <Navigation />
-        </div>
+        </header>
     )
 }
 
