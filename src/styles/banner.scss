@@ -10,7 +10,7 @@
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden; casse la banner sur home mais angle visible (ajout de border raduis dans le before)
     background-color: black;
 
     &::before {
@@ -21,6 +21,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
     }
     h1 {
         position: relative;

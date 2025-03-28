@@ -4,7 +4,7 @@ import "../styles/header.scss"
 function Header() {
     return (
         <header>
-            <img src="./LOGO.png" />
+            <img src=".././LOGO.png" />
             <Navigation />
         </header>
     )

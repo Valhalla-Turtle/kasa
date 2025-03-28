@@ -8,14 +8,16 @@ import houses from "../../houses.json"; // Import the JSON datata
 function Home() {
 
   return (
-    <body className="background">
+    <div className="background">
       <Header />
-      <Banner quote={"Chez vous, partout et ailleurs"} image={"./banner.jpeg"}/>
-      <div className="houses-list">
-        {houses.map((house) => <Card key={house.id} cover={house.cover} title={house.title} />)}
-      </div>
+      <main>
+        <Banner quote={"Chez vous, partout et ailleurs"} image={"./banner.jpeg"} />
+        <div className="houses-list">
+          {houses.map((house) => <Card key={house.id} cover={house.cover} title={house.title} id={house.id} />)}
+        </div>
+      </main>
       <Footer />
-    </body>
+    </div>
   )
 }
 
