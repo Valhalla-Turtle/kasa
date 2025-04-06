@@ -1,0 +1,87 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 0%;
+    text-align: left;
+}
+
+.title-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.host img {
+    border-radius: 50%;
+    height: 65px;
+}
+
+.hostname {
+    display: flex;
+    flex-direction: column; // Force le prénom et le nom sur deux lignes
+    white-space: pre-line; // Assure que les retours à la ligne sont respectés
+    text-align: right; // Ou center si tu veux centrer
+    justify-content: center;
+    width: 40%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 1%;
+    align-self: center;
+    color: #FF6060;
+}
+
+
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+
+.houseownerinfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.ownerstars {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.houseCollapsible{
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+}
+
+
+@media (max-width: 800px) {
+    .houseownerinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .ownerstars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}

@@ -4,6 +4,7 @@ import Header from '../comonents/Header';
 import "../styles/global.scss"
 import Footer from '../comonents/Footer';
 import SlideShow from '../comonents/SlideShow';
+import Property from '../comonents/Property';
 
 function Logement() {
   const { id } = useParams();
@@ -13,7 +14,8 @@ function Logement() {
     <div className='background'>
       <Header />
       <main>
-        <SlideShow pictures={house.pictures}/>
+        <SlideShow pictures={house.pictures} />
+        <Property house={house} />
       </main>
       <Footer />
     </div>
