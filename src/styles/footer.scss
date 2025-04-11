@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     flex-direction: column;
     color: white;
@@ -10,8 +10,24 @@ footer{
     margin-top: 3%;
 
     img {
-       width: 90px;
-       height: auto; 
-       max-width: 100%; 
+        width: 90px;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 80px 0px 80px 0px;
+        p{
+            display: flex;
+            width: 20%;
+            text-align: center;
+        }
+        img {
+            width: 180px;
+            height: auto;
+            max-width: 100%;
+        }
     }
 }
